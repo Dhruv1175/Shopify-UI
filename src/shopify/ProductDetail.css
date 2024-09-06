@@ -1,0 +1,28 @@
+/* ProductDetail.css */
+.modal-content {
+    border-radius: 10px;
+  }
+  
+  .carousel-item img {
+    height: 400px; /* Adjust based on your preference */
+    object-fit: cover;
+  }
+  
+  h3, h4 {
+    margin-bottom: 15px;
+  }
+  
+  .text-muted {
+    font-size: 1.2em;
+  }
+  
+  .btn-warning {
+    background-color: #f0c14b;
+    border-color: #a88734;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e6b547;
+    border-color: #b12704;
+  }
+  
