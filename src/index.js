@@ -1,13 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-//import FunComp from './FunComp';
-import './Mycss.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-//import Hooks from './Hooks';
-//import Mymap from './Mymap';
-//import Myapi from './Myapi';
-//import Nav from './shopify/Nav';
-//import Home from './shopify/Home';
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
 import Main from './shopify/Main';
 import { Provider } from 'react-redux';
 import store from './shopify/store';

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
@@ -19,7 +19,7 @@ export default function Home() {
         <p style={{fontWeight:"bolder"}}>Exclusive offer <em className="text-danger">-10%</em>  off this week</p>
       </div>
       <div style={{height:300,width:400,marginLeft:"15%",margin:50}} >
-        <img src="https://shopify-xrh7.onrender.com/hero.png" className='img-fluid' />
+        <img src="https://shopify-xrh7.onrender.com/hero.png" alt='Product' className='img-fluid' />
       </div>
     </div>
     <div className="d-flex flex-wrap " style={{height:150}} >
@@ -69,7 +69,7 @@ export default function Home() {
     <div >
       <div style={{height:400,width:1200,marginTop:20,backgroundColor:"#e3edf6",marginLeft:50}} className="d-flex flex-wrap">
         <div style={{width:600,height:400}}>
-          <img className="img-fluid" src="https://shopify-xrh7.onrender.com/banner.jpg" />
+          <img alt='Product ' className="img-fluid" src="https://shopify-xrh7.onrender.com/banner.jpg" />
         </div>
         <div>
           <h2 style={{marginTop:150,marginLeft:150,fontSize:35,fontWeight:"bolder"}}>Don't Miss the offer</h2>
