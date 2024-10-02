@@ -5,9 +5,10 @@ import { Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-export default function Nav() { 
+export default function Nav() {
   const cart = useSelector(state => state.cart);
-  const cartItemCount = cart.length; 
+  const cartItemCount = cart.length;
+  
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -18,23 +19,25 @@ export default function Nav() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
               <li className="nav-item">
-                <form className="d-flex" role="search" style={{ marginLeft: "auto", marginRight: "auto", maxWidth: "100%" }}>
-                  <input className="form-control border-info" style={{ width: "100%" }} type="search" placeholder="Search" aria-label="Search" />
-                  <button className="btn btn-info text-light" type="submit"><SearchIcon /></button>
+                <form className="d-flex" role="search" style={{ maxWidth: "100%", width: "600px" }}>
+                  <input className="form-control border-info me-2" type="search" placeholder="Search" aria-label="Search" />
+                  <button className="btn btn-info text-light" type="submit">
+                    <SearchIcon />
+                  </button>
                 </form>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link fw-bold" to="/products" style={{ color: "black", marginLeft: "20px" }}>Products</Link>
+              <li className="nav-item ms-lg-4">
+                <Link className="nav-link fw-bold" to="/products" style={{ color: "black" }}>Products</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link fw-bold" to="/help" style={{ color: "black", marginLeft: "20px" }}>Help</Link>
+              <li className="nav-item ms-lg-4">
+                <Link className="nav-link fw-bold" to="/help" style={{ color: "black" }}>Help</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link fw-bold" to="/login" style={{ color: "black", marginLeft: "20px" }}>Login</Link>
+              <li className="nav-item ms-lg-4">
+                <Link className="nav-link fw-bold" to="/login" style={{ color: "black" }}>Login</Link>
               </li>
-              <li className="nav-item" style={{ position: 'relative', marginLeft: "20px" }}>
+              <li className="nav-item ms-lg-4" style={{ position: 'relative' }}>
                 <Link className="nav-link" to="/cart" style={{ color: "black", display: 'inline-flex', alignItems: 'center' }}>
                   <ShoppingCartIcon style={{ fontSize: 24 }} />
                   {cartItemCount > 0 && (
